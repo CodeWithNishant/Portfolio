@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #4C4ACA;
+    color: white;
+}
+
+nav{
+    display: flex;
+    background-color:#062F4F;
+}
+
+nav ul{
+    width: 50%;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: White;
+}
+
+nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#items li{
+    color: white;
+}
+
+#items li:hover{
+    font-weight: bold;
+}
+
+.rightNav{
+    margin-left: 350px;
+    text-align: right;
+}
+
+main{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+#info{
+    float: left;
+    margin-left: 50px;
+}
+
+#pic{
+    margin-left: 800px;
+}
+
+img{
+    width:400px;
+    border-radius: 30%;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+#name_bio{
+    color:darkgoldenrod;
+    font-weight: bold;
+    font-size: 60px;
+}

@@ -1,80 +1,129 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #4C4ACA;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
-nav{
+header {
+    background-color: #062F4F;
+    padding: 10px 20px;
+}
+
+nav {
     display: flex;
-    background-color:#062F4F;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul{
-    width: 50%;
+nav ul {
     display: flex;
-}
-
-nav ul li{
     list-style: none;
-    padding: 26px 30px;
 }
 
-nav ul li a{
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: White;
+    color: white;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: red;
     text-decoration: underline;
 }
 
-#items li{
+#items li {
     color: white;
-}
-
-#items li:hover{
     font-weight: bold;
 }
 
-.rightNav{
-    margin-left: 350px;
-    text-align: right;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-main{
-    font-size: 50px;
-    margin-top: 60px;
+#info {
+    margin-bottom: 20px;
 }
 
-#info{
-    float: left;
-    margin-left: 50px;
+#name_bio {
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 60px;
 }
 
-#pic{
-    margin-left: 800px;
-}
-
-img{
-    width:400px;
-    border-radius: 30%;
-}
-
-button{
+#btn button {
     width: 140px;
     height: 40px;
     background-color: black;
     color: white;
-    border-radius: 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-#name_bio{
-    color:darkgoldenrod;
-    font-weight: bold;
-    font-size: 60px;
+#btn button:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.05);
+}
+
+#pic img {
+    width: 300px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#pic img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #062F4F;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #info {
+        margin-right: 50px;
+    }
+
+    #pic img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul.rightNav {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul.rightNav li {
+        padding: 10px 0;
+    }
 }
